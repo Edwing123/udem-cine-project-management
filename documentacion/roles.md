@@ -31,3 +31,17 @@ Yo llamaria a esta persona la mas valiente, sera la encargada de manejar los dat
 ## Diseñador UI
 
 La persona encarga de crear las diferentes interfaces de usuario graficas del sistema. Es un rol muy importante, ya que existen principios que se deben seguir para crear interfaces amigables, accesibles, y faciles de usar.
+
+## Asignacion de roles
+
+- Manager del proyecto
+  - Edwin Garcia
+- Analista
+  - Edwin Garcia
+  - Kenroy Norori
+- Programador
+  - Elias Castillo
+- Administrador de base de datos
+- Diseñador UI
+  - Edwin Garcia
+  - Kenroy Norori

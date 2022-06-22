@@ -16,7 +16,7 @@ Analisa el sistema propuesto, establece objetivos, requisitos y descripciones. L
 
 El analista tiene que hacerse uno con el sistema, sus funciones, el tipo de informacion del sistema, como estara compuesto el sistema, etc.
 
-## Programadores
+## Programador
 
 ### Descripcion
 
@@ -24,10 +24,10 @@ Encargado de tomar las tareas asignadas por el _manager del proyecto_, y con sus
 
 El programador tiene un arsenal de herramientas para lograrlo, su principal arma: un lenguaje de programacion.
 
-## Administradores de base de datos
+## Administrador de base de datos
 
 Yo llamaria a esta persona la mas valiente, sera la encargada de manejar los datos del sistema, esto lo hara usando sus conocimientos de base de datos, normalizacion, SQL, optimizaciones, etc.
 
 ## Diseñador UI
 
-La persona encarga de crear las diferentes interfaces de usuario graficas del sistema. Es un rol muy importante, ya que existen principios que se deben seguir para crear interfaces amigables, accesibles, y faciles de usar. 
+La persona encarga de crear las diferentes interfaces de usuario graficas del sistema. Es un rol muy importante, ya que existen principios que se deben seguir para crear interfaces amigables, accesibles, y faciles de usar.

@@ -42,7 +42,7 @@ Todas estas son preguntas que debemos hacernos a la hora de analisar un sistema,
 
 Podriamos tomar un enfoque que este _orientado a las necesidades_ de un cine, que cosas queremos controlar? porque controlarlas? Como controlarlas?
 
-### Necesidades de un cine
+## Necesidades de un cine
 
 Como se dijo anteriormente, a la hora de analisar un sistema, debemos poner limites. Para este sistema de cine hemos decidido enfocarnos en las siguientes necesidades administrativas:
 
@@ -51,3 +51,17 @@ Como se dijo anteriormente, a la hora de analisar un sistema, debemos poner limi
 - Control de las funciones cinematograficas.
 - Control de las salas y asientos.
 - Control de la venta de boletos.
+
+### Control de peliculas
+
+Llevar el control de las peliculas significa tener la informacion de las peliculas que se encuentran en los almacenes del cine en una base de datos, ademas de proveer una forma de trabajar con esta informacion, por ejemplo, ser capaz de modificar la informacion de las peliculas o agregar nuevas peliculas.
+
+Que informacion se desea tener de las peliculas?
+
+### Control de las peliculas
+
+### Control de las funciones cinematograficas
+
+### Control de las salas y asientos
+
+### Control de la venta de boletos

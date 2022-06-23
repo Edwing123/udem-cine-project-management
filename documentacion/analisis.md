@@ -1,15 +1,53 @@
 # Analisis del sistema de administracion de un cine
 
-## Como funciona un cine?
+## Que cosas ocurren en un cine?
 
 Podemos ver esto desde varias perspectivas, tales como:
 
-- Cliente.
-- Empleado (venta, limpieza).
-- Administrador.
+- Un Cliente.
+- Un Empleado.
+- Un Administrador.
 
 ### Cliente
 
-Un cliente va al cine, ve las peliculas disponibles, y si alguna de las peliculas le parece interesante, entonces comprara un boleta para poder verla.
+Un cliente va al cine, ve las peliculas disponibles, y si alguna de las peliculas le parece interesante, entonces comprara un boleta para verla.
 
-### Empleado 
+### Empleado
+
+A un empleado se le asigna diversos roles, por ejemplo, vendedor de boletos, o limpieza del cine.
+
+En el caso de un vendedor, el se encarga de venderle boletos a los clientes que llegen al cine. A la hora de vender boletos, el vendedor necesita saber que peliculas estan disponibles, los asientos que estan disponibles, los precios de entrada, etc.
+
+### Administrador
+
+Un administrador tiene mas responsabilidades, ya que el se encargara de que el cine este funcionando de forma eficiente y correcta, que los empleados esten realizando sus tareas, que las funciones de peliculas tengan los horarios correctos, etc.
+
+Bueno, su nombre lo dice, _administrador_, verdad?
+
+### Resumen de lo que pasa en un cine
+
+Un cliente llega al cine, ve las peliculas disponibles (en la cartelera), y si alguna le parece interesante, el comprara un boleto para verla.
+
+Ya con el boleto en mano, el cliente vera a cual sala del cine ir, y el asiento que se le fue asignado.
+
+Un Empleado tiene varios roles, 1) puede ser un vendedor, el cual atiende a los clientes que desean comprar boletos, 2) puede ser del personal de limpieza.
+
+Un administrador, se encarga de que todas las tareas que deban hacerse se hagan de forma correcta y en el tiempo esperado, un administrador es vital para que un cine funcione.
+
+## Que aspectos del cine se quieren controlar en el sistema?
+
+Que funcionalidades llevara un sistema?, hasta que nivel de detalle queremos controlar las cosas?, quienes usaran el sistema?
+
+Todas estas son preguntas que debemos hacernos a la hora de analisar un sistema, ya que es esencial definir los limites de lo que se desea hacer. Bueno, pero quien decide que hacer y no hacer?
+
+Podriamos tomar un enfoque que este _orientado a las necesidades_ de un cine, que cosas queremos controlar? porque controlarlas? Como controlarlas?
+
+### Necesidades de un cine
+
+Como se dijo anteriormente, a la hora de analisar un sistema, debemos poner limites. Para este sistema de cine hemos decidido enfocarnos en las siguientes necesidades administrativas:
+
+- Control de peliculas.
+- Control de los empleados.
+- Control de las funciones cinematograficas.
+- Control de las salas y asientos.
+- Control de la venta de boletos.

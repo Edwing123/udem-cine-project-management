@@ -30,7 +30,7 @@ Un cliente llega al cine, ve las peliculas disponibles (en la cartelera), y si a
 
 Ya con el boleto en mano, el cliente vera a cual sala del cine ir, y el asiento que se le fue asignado.
 
-Un Empleado tiene varios roles, 1) puede ser un vendedor, el cual atiende a los clientes que desean comprar boletos, 2) puede ser del personal de limpieza.
+Un empleado tiene varios roles, 1) puede ser un vendedor, el cual atiende a los clientes que desean comprar boletos, 2) puede ser del personal de limpieza.
 
 Un administrador, se encarga de que todas las tareas que deban hacerse se hagan de forma correcta y en el tiempo esperado, un administrador es vital para que un cine funcione.
 
@@ -56,12 +56,22 @@ Como se dijo anteriormente, a la hora de analisar un sistema, debemos poner limi
 
 Llevar el control de las peliculas significa tener la informacion de las peliculas que se encuentran en los almacenes del cine en una base de datos, ademas de proveer una forma de trabajar con esta informacion, por ejemplo, ser capaz de modificar la informacion de las peliculas o agregar nuevas peliculas.
 
-Que informacion se desea tener de las peliculas?
+### Control de los empleados
 
-### Control de las peliculas
+Los empleados del cine seran los que interactuen con el sistema, asi que necesitamos llevar control de los usuario que participaran en el sistema y sus roles dentro del mismo.
 
 ### Control de las funciones cinematograficas
 
+Una funcion cinematografica representa a una pelicula que esta disponible para ser vista, y a la cual se le asigna un horario, sala y precio.
+
+El sistema sera capaz de llevar el control de las funciones cinematograficas.
+
 ### Control de las salas y asientos
 
+Llevar el control de las salas significa que el sistema llevara el control de todas las salas con las que cuenta el cine. Tambien se llevara el control de los asientos de cada sala.
+
+Hacer esto es necesario porque a cada funcion cinematografica se le asigna una sala, y al vender un boleto, tambien se asignaran asientos.
+
 ### Control de la venta de boletos
+
+Al tener funciones cinematograficas, luego necesitamos ser capacez de controlar la venta de boletos de dichas funciones, esto involucra saber las funciones disponibles, asientos disponibles y horarios.

@@ -75,3 +75,186 @@ Hacer esto es necesario porque a cada funcion cinematografica se le asigna una s
 ### Control de la venta de boletos
 
 Al tener funciones cinematograficas, luego necesitamos ser capacez de controlar la venta de boletos de dichas funciones, esto involucra saber las funciones disponibles, asientos disponibles y horarios.
+
+## Interaccion de los usuarios con el sistema
+
+Antes de hablar sobre las diferentes funcionalidades del sistema, primero hablaremos de como los usuarios interactuaran con el.
+
+El sistema expondra dos aplicacion graficas:
+
+- Una aplicacion de escritorio.
+- Una aplicacion web.
+
+Los usuarios tendran que usar cualquiera de las dos para interactuar con las diferentes funcionalidades del sistema.
+
+## Funcionalidades del sistema
+
+Ahora que tenemos una vista clara de las cosas que pasan en un cine, es hora de definir las funcionalidades que el sistema tendra, y describir como cada funcionalidad trabajara en el sistema.
+
+### Gestionar peliculas
+
+Uno de los elementos mas importantes del cine son las peliculas, podriamos decir que sin peliculas no hay cine, asi que el sistema ofrecera una forma de gestionar las peliculas, esto, para ser mas exactos, significa que el sistema ofrecera una forma de llevar el control de la informacion de las peliculas.
+
+> Nota: las peliculas estaran disponibles para poder ser incluidas en funciones cinematograficas.
+
+> Nota: esta funcionalidad solo es para administradores.
+
+Que informacion se almacena de las peliculas?
+
+- Identificador.
+- Titulo.
+- Clasificacion.
+- Genero.
+- Duracion.
+- Fecha de lanzamiento.
+
+Que opciones tenemos cuando gestionamos peliculas?
+
+- Agregar pelicula.
+- Editar pelicula.
+- Eliminar pelicula.
+
+### Gestionar usuarios
+
+En el sistema existen dos tipos de roles:
+
+- Administrador.
+- Taquillero.
+
+El sistema ofrecera una forma de gestionar estos usuarios, y los roles asignados a ellos.
+
+> Nota: Los administradores seran los unicos capacez de poder crear y modificar usuarios.
+
+Que informacion se almacena de los usuarios?
+
+- Identificador.
+- Nombre.
+- Rol.
+- Contraseña.
+
+Que opciones tenemos cuando gestionamos usuarios?
+
+- Crear usuario.
+- Editar usuario.
+- Eliminar usuario.
+
+El proposito principal de los usuarios es el de poder diferenciar a los usuarios que tienen acceso a todas las caracteristicas del sistemas (administrador), versus los usuarios que solo pueden vender boletos (taquilleros).
+
+Es por eso que el sistema tendra dos usuarios creados por defecto:
+
+- Cuenta de administrador.
+- Cuenta de taquillero.
+
+Por lo general esto deberia ser suficiente para que trabajar, no hay necesidad de crear mas cuentas.
+
+### Gestionar salas y asientos
+
+El sistema permite ingresar informacion de las salas del cine, ademas de los asientos con los que cuenta cada sala.
+
+Llevar el control de esto es necesario porque a la hora de crear funciones cinematograficas, se le asignara una sala a una funcion.
+
+Que informacion se almacena de las salas?
+
+- Identificador.
+- Codigo.
+
+Cada sala tiene asientos, y a la hora de vender boletos, los vendedores pueden elegir los asientos, asi que es necesario llevar el control de los asientos de las salas del cine.
+
+Que informacion se almacena de los asientos?
+
+- Codigo.
+- Numero.
+
+A una asiento se le asigna:
+
+- Una sala.
+
+Que opciones tenemos cuando gestionamos salas y asientos?
+
+- Agregar sala.
+- Editar sala.
+- Eliminar sala.
+- Agregar asientos.
+
+> Nota: Al editar una sala, tambien seremos capacez de editar los asientos.
+
+### Gestion de horarios
+
+El sistema permitira gestionar horarios, los cuales seran asignados a funciones.
+
+Que informacion se almacena de los horarios?
+
+- Identificador.
+- Nombre.
+
+Que opciones tenemos cuando gestionamos horarios?
+
+- Crear horario.
+- Editar horario.
+- Eliminar horario.
+
+### Gestionar funciones cinematograficas
+
+Esta es una de las partes mas importantes del cine, las funciones son la razon principal por las que una persona va al cine.
+
+El sistema permitira gestionar funciones cinematograficas.
+
+Que informacion se almacena de las funciones?
+
+- Identificador.
+- Fecha de creacion.
+- Precio.
+
+A una funcion se le asigna:
+
+- Una pelicula.
+- Un horario.
+- Una sala.
+
+Que opciones tenemos cuando gestionamos funciones?
+
+- Crear funcion.
+- Editar funcion.
+- Archivar funcion.
+
+Restricciones a tomar en cuenta:
+
+Dos funciones no pueden tener la misma sala, a menos que los horarios sean diferentes, y dos funciones no pueden tener el mismo horario, a menos que las salas sean diferentes.
+
+### Gestion de la venta de boletos
+
+El sistema permite vender boletos para las funciones disponibles, un cliente puede comprar uno o mas boletos, el vendedor si lo desea puede preguntarle al cliente la ubicacion de los asientos, esta decision esta fuera de los alcanzes del sistema, asi que sera dejada a decision de la administracion del cine.
+
+Que informacion se almacena de las ventas?
+
+- Identificador.
+- Fecha de la venta.
+- Total a pagar.
+
+A una venta se le asigna:
+
+- Un funcion.
+
+Ya que un cliente puede comprar uno o mas boletos, cada venta tiene asociada uno o mas boletos, asi que necesitamos llevar control de los boletos.
+
+Que informacion se almacena de los boletos?
+
+- Identificador.
+
+A un boleto se le asigna:
+
+- Un venta.
+- Un asiento.
+
+Que opciones tenemos cuando gestionamos ventas?
+
+- Seleccionar funcion.
+- Ingresar numero de boletos.
+- Seleccionar asientos.
+
+
+## Diagramas de casos de uso
+
+Los diagramas de caso de uso nos dejan ver de forma grafica a los actores y funcionalidades del sistema, y como estos interactuan.
+
+![](../imagenes/caso-de-uso-sistema-cine.jpg)

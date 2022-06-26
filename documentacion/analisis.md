@@ -202,6 +202,7 @@ Que informacion se almacena de los horarios?
 
 - Identificador.
 - Nombre.
+- Hora.
 
 Que opciones tenemos cuando gestionamos horarios?
 

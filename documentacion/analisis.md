@@ -90,13 +90,13 @@ Hacer esto es necesario porque a cada funcion cinematografica se le asigna una s
 
 ### Control de la venta de boletos
 
-Al tener funciones cinematograficas, luego necesitamos ser capacez de controlar la venta de boletos de dichas funciones, esto involucra saber las funciones disponibles, asientos disponibles y horarios.
+Al tener funciones cinematograficas, luego necesitamos ser capaces de controlar la venta de boletos de dichas funciones, esto involucra saber las funciones disponibles, asientos disponibles y horarios.
 
 ## Interaccion de los usuarios con el sistema
 
 Antes de hablar sobre las diferentes funcionalidades del sistema, primero hablaremos de como los usuarios interactuaran con el.
 
-El sistema expondra dos aplicacion graficas:
+El sistema dispondra de dos aplicacion graficas:
 
 - Una aplicacion de escritorio.
 - Una aplicacion web.
@@ -139,7 +139,7 @@ En el sistema existen dos tipos de roles:
 
 El sistema ofrecera una forma de gestionar estos usuarios, y los roles asignados a ellos.
 
-> Nota: Los administradores seran los unicos capacez de poder crear y modificar usuarios.
+> Nota: Los administradores seran los unicos capaces de poder crear y modificar usuarios.
 
 Que informacion se almacena de los usuarios?
 
@@ -192,7 +192,7 @@ Que opciones tenemos cuando gestionamos salas y asientos?
 - Eliminar sala.
 - Agregar asientos.
 
-> Nota: Al editar una sala, tambien seremos capacez de editar los asientos.
+> Nota: Al editar una sala, tambien seremos capaces de editar los asientos.
 
 ### Gestion de horarios
 
@@ -310,7 +310,7 @@ Documentacion:
 Seguridad:
 
 - usar protocolos de comunicacion seguros, tales como, HTTPS.
-- Las contrasañas deben ser pasadas por una funcion de hashing antes de ser guardadas a la base de datos.
+- Las contraseñas deben ser pasadas por una funcion de hashing antes de ser guardadas a la base de datos.
 - La funcion de hashing sera Bcrypt.
 
 Herramientas de desarrollo:
@@ -340,7 +340,7 @@ Herramientas de desarrollo:
 
 ## Descripcion del sistema
 
-El sistema de administracion del cine proveedera un conjunto de herramientas para facilitar la administracion de los siguientes aspectos:
+El sistema de administracion del cine proveera un conjunto de herramientas para facilitar la administracion de los siguientes aspectos:
 
 - Gestion de peliculas.
 - Gestion de usuarios (taquilleros y administradores).

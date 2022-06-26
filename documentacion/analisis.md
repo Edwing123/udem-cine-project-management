@@ -1,5 +1,21 @@
 # Analisis del sistema de administracion de un cine
 
+## Objetivos
+
+### Generales
+
+- Crear un sistema para facilitar los aspectos administrativos de un cine.
+
+### Especificos
+
+- Identificar los aspectos de un cine que se quieren administrar.
+- Identificar las funcionalidades del sistema.
+- Crear descripciones para las funcionalidades del sistema.
+- Definir el tipo de interaccion que tendran los usuarios con el sistema.
+- Crear diagrama de casos de uso.
+- Definir requisitos.
+- Crear descripcion del sistema.
+
 ## Que cosas ocurren en un cine?
 
 Podemos ver esto desde varias perspectivas, tales como:
@@ -38,13 +54,13 @@ Un administrador, se encarga de que todas las tareas que deban hacerse se hagan 
 
 Que funcionalidades llevara un sistema?, hasta que nivel de detalle queremos controlar las cosas?, quienes usaran el sistema?
 
-Todas estas son preguntas que debemos hacernos a la hora de analisar un sistema, ya que es esencial definir los limites de lo que se desea hacer. Bueno, pero quien decide que hacer y no hacer?
+Todas estas son preguntas que debemos hacernos a la hora de analizar un sistema, ya que es esencial definir los limites de lo que se desea hacer. Bueno, pero quien decide que hacer y no hacer?
 
 Podriamos tomar un enfoque que este _orientado a las necesidades_ de un cine, que cosas queremos controlar? porque controlarlas? Como controlarlas?
 
 ## Necesidades de un cine
 
-Como se dijo anteriormente, a la hora de analisar un sistema, debemos poner limites. Para este sistema de cine hemos decidido enfocarnos en las siguientes necesidades administrativas:
+Como se dijo anteriormente, a la hora de analizar un sistema, debemos poner limites. Para este sistema de cine hemos decidido enfocarnos en las siguientes necesidades administrativas:
 
 - Control de peliculas.
 - Control de los empleados.
@@ -145,7 +161,7 @@ Es por eso que el sistema tendra dos usuarios creados por defecto:
 - Cuenta de administrador.
 - Cuenta de taquillero.
 
-Por lo general esto deberia ser suficiente para que trabajar, no hay necesidad de crear mas cuentas.
+Por lo general esto deberia ser suficiente para trabajar, no hay necesidad de crear mas cuentas.
 
 ### Gestionar salas y asientos
 
@@ -252,9 +268,84 @@ Que opciones tenemos cuando gestionamos ventas?
 - Ingresar numero de boletos.
 - Seleccionar asientos.
 
-
 ## Diagramas de casos de uso
 
 Los diagramas de caso de uso nos dejan ver de forma grafica a los actores y funcionalidades del sistema, y como estos interactuan.
 
 ![](../imagenes/caso-de-uso-sistema-cine.jpg)
+
+## Requisitos
+
+Los requisitos hacen referencia a las cosas que se necesitan implementar para que el sistema que se desea crear tome vida.
+
+### Requisitos funcionales
+
+- Se deben crear dos aplicaciones graficas:
+
+  - Aplicacion de escritorio.
+  - Aplicacion web.
+
+- Se implementaran las siguiente funcionalidades:
+
+  - Control de peliculas.
+  - Control de los empleados.
+  - Control de las funciones cinematograficas.
+  - Control de las salas y asientos.
+  - Control de la venta de boletos.
+
+- Se debe crear un sistema de autenticacion de usuarios, y asignacion de roles.
+
+### Requisitos no funcionales
+
+**Servicio Backend**
+
+Eficiencia:
+
+- Aplicar optimizaciones a las consultas, funciones y procedimientos almacenados de la base de datos.
+
+Documentacion:
+
+- El sistema debe de contar con manuales debidamente documentados.
+
+Seguridad:
+
+- usar protocolos de comunicacion seguros, tales como, HTTPS.
+- Las contrasañas deben ser pasadas por una funcion de hashing antes de ser guardadas a la base de datos.
+- La funcion de hashing sera Bcrypt.
+
+Herramientas de desarrollo:
+
+- El sistema de manejo de base de datos sera SQL Server.
+- El lenguaje de programacion para el backend sera Go (Golang).
+- JSON sera el formato de texto para compartir informacion.
+- JWT sera utilizado para autenticar usuarios y sus roles.
+
+**Aplicaciones graficas**
+
+Usabilidad:
+
+- Asegurar que las aplicaciones seas responsivas a las interacciones del usuario en el menor tiempo posible.
+- El sistema debe de proporcionar mensajes de error que sean informativos.
+- Las interfaces de usuario deben de proveer una experiencia de usuario buena.
+- Las aplicaciones deben tener un diseño que se adapte a diferentes tamaños de pantalla.
+
+Documentacion:
+
+- Se deben realizar capaciones a los empleados del cine.
+
+Herramientas de desarrollo:
+
+- Para la aplicacion de escritorio se usara Windows Forms con C#.
+- Para la aplicacion de web se usara ReactJS junto con librerias de ayuda.
+
+## Descripcion del sistema
+
+El sistema de administracion del cine proveedera un conjunto de herramientas para facilitar la administracion de los siguientes aspectos:
+
+- Gestion de peliculas.
+- Gestion de usuarios (taquilleros y administradores).
+- Gestion de salas, asientos y horarios.
+- Creacion de funciones cinematograficas.
+- Venta de boletos.
+
+Para hacer uso de estas herramientas, el sistema ofrecera una aplicacion de escritorio y una aplicacion web.

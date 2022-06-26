@@ -34,16 +34,20 @@ La persona encarga de crear las diferentes interfaces de usuario graficas del si
 
 ## Asignacion de roles
 
-- Manager del proyecto
+- Manager del proyecto:
   - Edwin Garcia
-- Analista
+- Analista:
   - Edwin Garcia
   - Kenroy Norori
   - Enmanuel Olivas
   - Elias Castillo
-- Programador
+  - Adriana Marcenaro
+- Desarrollador Web:
+  - Edwin Garcia
+- Desarrollador .NET Framework Windows Forms:
   - Elias Castillo
-- Administrador de base de datos
-- Diseñador UI
+- Administrador de base de datos:
+  - Edwin Garcia
+- Diseñador UI:
   - Edwin Garcia
   - Kenroy Norori

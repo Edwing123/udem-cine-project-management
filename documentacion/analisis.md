@@ -171,19 +171,23 @@ Llevar el control de esto es necesario porque a la hora de crear funciones cinem
 
 Que informacion se almacena de las salas?
 
-- Identificador.
-- Codigo.
+- Numero
 
 Cada sala tiene asientos, y a la hora de vender boletos, los vendedores pueden elegir los asientos, asi que es necesario llevar el control de los asientos de las salas del cine.
 
 Que informacion se almacena de los asientos?
 
-- Codigo.
 - Numero.
 
 A una asiento se le asigna:
 
 - Una sala.
+
+Restricciones a tomar en cuenta:
+
+El numero de una sala es unico, asi que, el numero sera la llave primaria de una sala.
+
+La llave primaria de un asiento sera un llave primaria compuesta entre el numero de asiento y el numero de sala.
 
 Que opciones tenemos cuando gestionamos salas y asientos?
 
@@ -211,8 +215,6 @@ Que opciones tenemos cuando gestionamos horarios?
 - Eliminar horario.
 
 ### Gestionar funciones cinematograficas
-
-Esta es una de las partes mas importantes del cine, las funciones son la razon principal por las que una persona va al cine.
 
 El sistema permitira gestionar funciones cinematograficas.
 
@@ -260,7 +262,7 @@ Que informacion se almacena de los boletos?
 
 A un boleto se le asigna:
 
-- Un venta.
+- Una venta.
 - Un asiento.
 
 Que opciones tenemos cuando gestionamos ventas?
@@ -298,7 +300,7 @@ Los requisitos hacen referencia a las cosas que se necesitan implementar para qu
 
 ### Requisitos no funcionales
 
-**Servicio Backend**
+**API HTTP**
 
 Eficiencia:
 
@@ -316,10 +318,10 @@ Seguridad:
 
 Herramientas de desarrollo:
 
-- El sistema de manejo de base de datos sera SQL Server.
-- El lenguaje de programacion para el backend sera Go (Golang).
+- El sistema de manejo de base de datos sera SQL Server Y PostgreSQL.
+- El lenguaje de programacion para la API HTTP sera Go (Golang).
 - JSON sera el formato de texto para compartir informacion.
-- JWT sera utilizado para autenticar usuarios y sus roles.
+- Se usara la tecnica de sesiones para manejar las sesiones de los usuarios.
 
 **Aplicaciones graficas**
 

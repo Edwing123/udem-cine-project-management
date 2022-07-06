@@ -31,7 +31,7 @@ En el analisis obtuvimos las siguientes entidades:
 
 El sistema esta compuesto de:
 
-- Servicio Backend.
+- API HTTP.
 - Base de datos.
 - Dos aplicaciones graficas.
 

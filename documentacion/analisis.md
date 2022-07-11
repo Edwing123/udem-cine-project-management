@@ -4,7 +4,7 @@
 
 ### Generales
 
-- Crear un sistema para facilitar los aspectos administrativos de un cine.
+- Crear un sistema para controlar las necesidades administrativas de un cine.
 
 ### Especificos
 
@@ -43,8 +43,6 @@ Bueno, su nombre lo dice, _administrador_, verdad?
 ### Resumen de lo que pasa en un cine
 
 Un cliente llega al cine, ve las peliculas disponibles (en la cartelera), y si alguna le parece interesante, el comprara un boleto para verla.
-
-Ya con el boleto en mano, el cliente vera a cual sala del cine ir, y el asiento que se le fue asignado.
 
 Un empleado tiene varios roles, 1) puede ser un vendedor, el cual atiende a los clientes que desean comprar boletos, 2) puede ser del personal de limpieza.
 
@@ -86,7 +84,7 @@ El sistema sera capaz de llevar el control de las funciones cinematograficas.
 
 Llevar el control de las salas significa que el sistema llevara el control de todas las salas con las que cuenta el cine. Tambien se llevara el control de los asientos de cada sala.
 
-Hacer esto es necesario porque a cada funcion cinematografica se le asigna una sala, y al vender un boleto, tambien se asignaran asientos.
+Hacer esto es necesario porque a cada funcion cinematografica se le asigna una sala, y al vender boletos, tambien se asignaran asientos.
 
 ### Control de la venta de boletos
 
@@ -101,19 +99,15 @@ El sistema dispondra de dos aplicacion graficas:
 - Una aplicacion de escritorio.
 - Una aplicacion web.
 
-Los usuarios tendran que usar cualquiera de las dos para interactuar con las diferentes funcionalidades del sistema.
+Los usuarios usaran cualquiera de las dos aplicaciones graficas para interactuar con el sistema.
 
 ## Funcionalidades del sistema
 
-Ahora que tenemos una vista clara de las cosas que pasan en un cine, es hora de definir las funcionalidades que el sistema tendra, y describir como cada funcionalidad trabajara en el sistema.
+Ahora que tenemos una vista clara de las cosas que pasan en un cine, es hora de definir las funcionalidades que el sistema tendra, y describir el propositio de cada funcionalidad.
 
 ### Gestionar peliculas
 
-Uno de los elementos mas importantes del cine son las peliculas, podriamos decir que sin peliculas no hay cine, asi que el sistema ofrecera una forma de gestionar las peliculas, esto, para ser mas exactos, significa que el sistema ofrecera una forma de llevar el control de la informacion de las peliculas.
-
-> Nota: las peliculas estaran disponibles para poder ser incluidas en funciones cinematograficas.
-
-> Nota: esta funcionalidad solo es para administradores.
+El sistema ofrecera una forma de gestionar las peliculas, esto, para ser mas exactos, significa que el sistema ofrecera una forma de llevar el control de la informacion de las peliculas.
 
 Que informacion se almacena de las peliculas?
 
@@ -149,19 +143,17 @@ Que informacion se almacena de los usuarios?
 - Contraseña.
 
 Que opciones tenemos cuando gestionamos usuarios?
-
+imagenes
 - Crear usuario.
 - Editar usuario.
 - Eliminar usuario.
 
-El proposito principal de los usuarios es el de poder diferenciar a los usuarios que tienen acceso a todas las caracteristicas del sistemas (administrador), versus los usuarios que solo pueden vender boletos (taquilleros).
+El proposito principal de los usuarios es el de poder diferenciar a los usuarios que tienen acceso a todas las caracteristicas del sistemas (administrador), versus los usuarios que solo pueden vender boletos (taquillero).
 
 Es por eso que el sistema tendra dos usuarios creados por defecto:
 
 - Cuenta de administrador.
 - Cuenta de taquillero.
-
-Por lo general esto deberia ser suficiente para trabajar, no hay necesidad de crear mas cuentas.
 
 ### Gestionar salas y asientos
 
@@ -187,14 +179,13 @@ Restricciones a tomar en cuenta:
 
 El numero de una sala es unico, asi que, el numero sera la llave primaria de una sala.
 
-La llave primaria de un asiento sera un llave primaria compuesta entre el numero de asiento y el numero de sala.
+La llave primaria de un asiento sera una llave primaria compuesta entre el numero de asiento y el numero de sala.
 
 Que opciones tenemos cuando gestionamos salas y asientos?
 
 - Agregar sala.
 - Editar sala.
 - Eliminar sala.
-- Agregar asientos.
 
 > Nota: Al editar una sala, tambien seremos capaces de editar los asientos.
 
@@ -264,6 +255,7 @@ A un boleto se le asigna:
 
 - Una venta.
 - Un asiento.
+- Una sala.
 
 Que opciones tenemos cuando gestionamos ventas?
 

@@ -48,6 +48,7 @@ La persona encarga de crear las diferentes interfaces de usuario graficas del si
   - Elias Castillo
 - Administrador de base de datos:
   - Edwin Garcia
+  - Enmanuel Olivas
 - Diseñador UI:
   - Edwin Garcia
   - Kenroy Norori

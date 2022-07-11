@@ -31,8 +31,7 @@ Asi tendremos una forma de ver como el proyecto progresa segun las asignaciones 
 
 ## Tareas por hacer (tareas de planeacion)
 
-> Nota: Trello lo comenzaremos a usar en la fase de _analisis_ hacia adelante.
-
 - [x] usar Trello como administrador de tareas.
-- [] Asignar roles a cada miembro.
-- [] Realizar analisis del sistema.
+- [x] Asignar roles a cada miembro.
+- [x] Realizar analisis del sistema.
+- [x] Realizar fase de diseño del sistema.

@@ -32,7 +32,7 @@ En el analisis obtuvimos las siguientes entidades:
 El sistema esta compuesto de:
 
 - API HTTP.
-- Base de datos.
+- Bases de datos.
 - Dos aplicaciones graficas.
 
 A continuacion se muestra un diagrama en donde se ve como estos componentes se comunican.

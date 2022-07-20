@@ -1,7 +1,5 @@
 # Roles
 
-En este documento estan documentados los roles de cada miembro del equipo.
-
 ## Manager del proyecto
 
 ### Descripcion
@@ -26,7 +24,7 @@ El programador tiene un arsenal de herramientas para lograrlo, su principal arma
 
 ## Administrador de base de datos
 
-Yo llamaria a esta persona la mas valiente, sera la encargada de manejar los datos del sistema, esto lo hara usando sus conocimientos de base de datos, normalizacion, SQL, optimizaciones, etc.
+Sera la encargado de manejar los datos del sistema, esto lo hara usando sus conocimientos de base de datos, normalizacion, SQL, optimizaciones, etc.
 
 ## Diseñador UI
 

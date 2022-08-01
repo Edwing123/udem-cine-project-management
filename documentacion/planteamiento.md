@@ -35,3 +35,6 @@ Asi tendremos una forma de ver como el proyecto progresa segun las asignaciones 
 - [x] Asignar roles a cada miembro.
 - [x] Realizar analisis del sistema.
 - [x] Realizar fase de diseño del sistema.
+- [x] Entrar a la etapa de implementacion.
+- [] Realizar pruebas al sistema.
+- [] Crear documentacion del sistema.

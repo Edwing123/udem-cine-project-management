@@ -32,17 +32,15 @@ Un cliente va al cine, ve las peliculas disponibles, y si alguna de las pelicula
 
 A un empleado se le asigna diversos roles, por ejemplo, vendedor de boletos, o limpieza del cine.
 
-En el caso de un vendedor, el se encarga de venderle boletos a los clientes que llegen al cine. A la hora de vender boletos, el vendedor necesita saber que peliculas estan disponibles, los asientos que estan disponibles, los precios de entrada, etc.
+En el caso de un vendedor, el se encarga de venderle boletos a los clientes que llegen al cine. A la hora de vender boletos, el vendedor necesita saber que peliculas estan disponibles, los asientos que estan disponibles, los precios de las entradas, etc.
 
 ### Administrador
 
 Un administrador tiene mas responsabilidades, ya que el se encargara de que el cine este funcionando de forma eficiente y correcta, que los empleados esten realizando sus tareas, que las funciones de peliculas tengan los horarios correctos, etc.
 
-Bueno, su nombre lo dice, _administrador_, verdad?
-
 ### Resumen de lo que pasa en un cine
 
-Un cliente llega al cine, ve las peliculas disponibles (en la cartelera), y si alguna le parece interesante, el comprara un boleto para verla.
+Un cliente llega al cine, ve las peliculas disponibles (en la cartelera), y si alguna le parece interesante, el comprara uno o mas boletos para verla.
 
 Un empleado tiene varios roles, 1) puede ser un vendedor, el cual atiende a los clientes que desean comprar boletos, 2) puede ser del personal de limpieza.
 
@@ -96,10 +94,9 @@ Antes de hablar sobre las diferentes funcionalidades del sistema, primero hablar
 
 El sistema dispondra de dos aplicacion graficas:
 
-- Una aplicacion de escritorio.
 - Una aplicacion web.
 
-Los usuarios usaran cualquiera de las dos aplicaciones graficas para interactuar con el sistema.
+Los usuarios usaran la aplicacion web para interactuar con el sistema.
 
 ## Funcionalidades del sistema
 
@@ -143,14 +140,14 @@ Que informacion se almacena de los usuarios?
 - Contraseña.
 
 Que opciones tenemos cuando gestionamos usuarios?
-imagenes
+
 - Crear usuario.
 - Editar usuario.
 - Eliminar usuario.
 
 El proposito principal de los usuarios es el de poder diferenciar a los usuarios que tienen acceso a todas las caracteristicas del sistemas (administrador), versus los usuarios que solo pueden vender boletos (taquillero).
 
-Es por eso que el sistema tendra dos usuarios creados por defecto:
+El sistema tendra dos usuarios creados por defecto:
 
 - Cuenta de administrador.
 - Cuenta de taquillero.
@@ -260,7 +257,6 @@ A un boleto se le asigna:
 Que opciones tenemos cuando gestionamos ventas?
 
 - Seleccionar funcion.
-- Ingresar numero de boletos.
 - Seleccionar asientos.
 
 ## Diagramas de casos de uso
@@ -275,10 +271,9 @@ Los requisitos hacen referencia a las cosas que se necesitan implementar para qu
 
 ### Requisitos funcionales
 
-- Se deben crear dos aplicaciones graficas:
+- Las interfaz grafica del sistema era:
 
-  - Aplicacion de escritorio.
-  - Aplicacion web.
+  - Una aplicacion web.
 
 - Se implementaran las siguiente funcionalidades:
 
@@ -294,13 +289,13 @@ Los requisitos hacen referencia a las cosas que se necesitan implementar para qu
 
 **API HTTP**
 
-Eficiencia:
+- Eficiencia:
 
-- Aplicar optimizaciones a las consultas, funciones y procedimientos almacenados de la base de datos.
+- Aplicar optimizaciones a las consultas de la base de datos.
 
 Documentacion:
 
-- El sistema debe de contar con manuales debidamente documentados.
+- El sistema debe de contar con documentacion.
 
 Seguridad:
 
@@ -310,8 +305,9 @@ Seguridad:
 
 Herramientas de desarrollo:
 
-- El sistema de manejo de base de datos sera SQL Server Y PostgreSQL.
+- El sistema de manejo de base de datos sera PostgreSQL.
 - El lenguaje de programacion para la API HTTP sera Go (Golang).
+- GoFiber sera el framework de desarrollo web para crear la API HTTP.
 - JSON sera el formato de texto para compartir informacion.
 - Se usara la tecnica de sesiones para manejar las sesiones de los usuarios.
 
@@ -320,9 +316,8 @@ Herramientas de desarrollo:
 Usabilidad:
 
 - Asegurar que las aplicaciones seas responsivas a las interacciones del usuario en el menor tiempo posible.
-- El sistema debe de proporcionar mensajes de error que sean informativos.
-- Las interfaces de usuario deben de proveer una experiencia de usuario buena.
-- Las aplicaciones deben tener un diseño que se adapte a diferentes tamaños de pantalla.
+- El sistema debe de proporcionar mensajes de error entendibles.
+- Las interfaces de usuario deben de brindar una experiencia de usuario buena.
 
 Documentacion:
 
@@ -330,8 +325,12 @@ Documentacion:
 
 Herramientas de desarrollo:
 
-- Para la aplicacion de escritorio se usara Windows Forms con C#.
-- Para la aplicacion de web se usara ReactJS junto con librerias de ayuda.
+- ViteJS como herramienta de desarrollo para el proyecto.
+- Lenguaje de programacion Typescript.
+- ReactJS como libreria para crear la interfaz web.
+- React Router para manejar enrutamiento del lado del cliente.
+- StitchesJS para estilizar componentes.
+- Radiux UI por sus componentes accesisibles.
 
 ## Descripcion del sistema
 
@@ -343,4 +342,4 @@ El sistema de administracion del cine proveera un conjunto de herramientas para 
 - Creacion de funciones cinematograficas.
 - Venta de boletos.
 
-Para hacer uso de estas herramientas, el sistema ofrecera una aplicacion de escritorio y una aplicacion web.
+Para hacer uso de estas herramientas, el sistema ofrecera una aplicacion web.

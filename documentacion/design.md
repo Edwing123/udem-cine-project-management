@@ -8,7 +8,7 @@ En la etapa de diseño del sistema tocaremos los siguientes puntos:
 
 ## Modelacion de los datos del sistema.
 
-Gracias al analisis previo pudimos obtener detalles del tipo de informacion con la que trabajaremos en el sistema, ademas de ver como la informacion esta relacionado. Lo que se hara en esta seccion es extender lo que se hizo en el analisis, crearemos un diagrama de entidad-relacion y diagrama del modelo relacional.
+Gracias al analisis previo pudimos obtener detalles del tipo de informacion con la que trabajaremos en el sistema, ademas de ver como la informacion esta relacionada. Lo que se hara en esta seccion es extender lo que se hizo en el analisis, crearemos un diagrama de entidad-relacion.
 
 ### Entidades
 
@@ -33,7 +33,7 @@ El sistema esta compuesto de:
 
 - API HTTP.
 - Bases de datos.
-- Dos aplicaciones graficas.
+- Aplicacion web.
 
 A continuacion se muestra un diagrama en donde se ve como estos componentes se comunican.
 

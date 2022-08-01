@@ -13151,16 +13151,16 @@
 									},
 									"font": "Lato;13;0",
 									"left": 496,
-									"top": 292,
+									"top": 299,
 									"width": 87.0771484375,
-									"height": 26,
+									"height": 13,
 									"alpha": 3.8189837566449323,
 									"distance": 75.31268153505093,
 									"hostEdge": {
 										"$ref": "AAAAAAGBoGxw4IgFikA="
 									},
 									"edgePosition": 1,
-									"text": "+se comunicaca",
+									"text": "+se comunica",
 									"wordWrap": true
 								},
 								{
@@ -13911,7 +13911,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGBoGg4cYS1rpU="
 							},
-							"name": "se comunicaca",
+							"name": "se comunica",
 							"end1": {
 								"_type": "UMLAssociationEnd",
 								"_id": "AAAAAAGBoGxw34gC+bM=",

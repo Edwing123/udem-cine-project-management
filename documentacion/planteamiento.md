@@ -1,7 +1,3 @@
----
-Problematica: La administracion de un cine.
----
-
 # Planteamiento
 
 ## Descripcion breve

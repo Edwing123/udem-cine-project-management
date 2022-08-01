@@ -2,21 +2,15 @@
 
 ## Manager del proyecto
 
-### Descripcion
-
 Se encarga de tomas los requerimientos, y en base a ellos digirir a los otros miembros del equipo para realizar el sistema propuesto. Esto se lograra creando tareas nuevas, asignandolas a miembros, y monitorear que estas tareas se completen en tiempo y forma.
 
 ## Analista
-
-### Descripcion
 
 Analisa el sistema propuesto, establece objetivos, requisitos y descripciones. La meta del analista sera la de entender lo que se desea hacer, y descubrir cuales son las mejores formas de desarrollar el sistema deseado.
 
 El analista tiene que hacerse uno con el sistema, sus funciones, el tipo de informacion del sistema, como estara compuesto el sistema, etc.
 
 ## Programador
-
-### Descripcion
 
 Encargado de tomar las tareas asignadas por el _manager del proyecto_, y con sus conocimientos implementar las soluciones para dichas tareas.
 
@@ -33,13 +27,25 @@ La persona encarga de crear las diferentes interfaces de usuario graficas del si
 ## Asignacion de roles
 
 - Manager del proyecto:
+
   - Edwin Garcia
+
 - Analista:
+
+  - Adriana
   - Edwin Garcia
+  - Enmanuel Olivas
+  - Ivan
   - Kenroy Norori
+
 - Desarrollador Web:
+
   - Edwin Garcia
+
 - Administrador de base de datos:
+
   - Edwin Garcia
+
 - Diseñador UI:
   - Edwin Garcia
+  - Kenroy Norori

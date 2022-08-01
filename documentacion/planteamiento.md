@@ -25,7 +25,7 @@ Trello nos permite crear tareas, asignar fechas, niveles de prioridad y miembros
 
 Asi tendremos una forma de ver como el proyecto progresa segun las asignaciones que se han completado y la cantidad de trabajo que los miembros del proyecto tiene.
 
-## Tareas por hacer (tareas de planeacion)
+<!-- ## Tareas por hacer (tareas de planeacion)
 
 - [x] usar Trello como administrador de tareas.
 - [x] Asignar roles a cada miembro.
@@ -33,4 +33,4 @@ Asi tendremos una forma de ver como el proyecto progresa segun las asignaciones 
 - [x] Realizar fase de diseño del sistema.
 - [x] Entrar a la etapa de implementacion.
 - [] Realizar pruebas al sistema.
-- [] Crear documentacion del sistema.
+- [] Crear documentacion del sistema. -->

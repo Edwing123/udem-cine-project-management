@@ -1,3 +1,39 @@
+# Planteamiento
+
+## Descripcion breve
+
+En un cine pasan muchas cosas, asi que tener todo de forma ordenada es muy importante para el funcionamiento optimo de este.
+
+Desde manejar las peliculas, las funciones disponibles, venta de boletos, asignacion de asientos. Todas estan son tareas que un sistema informatico puede ayudar a manejar.
+
+## Objetivos
+
+Nuestro objetivo con este proyecto es crear un sistema para manejar las diferentes necesidades de administracion de un cine, tales como:
+
+- Manejo de las peliculas.
+- Creacion de las funciones de peliculas.
+- Asignacion de salas y asientos.
+- Venta de boletos.
+
+## Herramientas de manejo de proyectos
+
+### Para llevar control de las tareas
+
+Trello sera la herramienta que usaremos para llevar control de las tareas que cada miembro deba realizar.
+
+Trello nos permite crear tareas, asignar fechas, niveles de prioridad y miembros a las tareas.
+
+Asi tendremos una forma de ver como el proyecto progresa segun las asignaciones que se han completado y la cantidad de trabajo que los miembros del proyecto tiene.
+
+## Tareas por hacer (tareas de planeacion)
+
+- [x] usar Trello como administrador de tareas.
+- [x] Asignar roles a cada miembro.
+- [x] Realizar analisis del sistema.
+- [x] Realizar fase de diseño del sistema.
+- [x] Entrar a la etapa de implementacion.
+- [] Realizar pruebas al sistema.
+- [] Crear documentacion del sistema.
 # Analisis del sistema de administracion de un cine
 
 ## Objetivos
@@ -291,46 +327,46 @@ Los requisitos hacen referencia a las cosas que se necesitan implementar para qu
 
 - Eficiencia:
 
-  - Aplicar optimizaciones a las consultas de la base de datos.
+- Aplicar optimizaciones a las consultas de la base de datos.
 
 Documentacion:
 
-  - El sistema debe de contar con documentacion.
+- El sistema debe de contar con documentacion.
 
-- Seguridad:
+Seguridad:
 
-  - usar protocolos de comunicacion seguros, tales como, HTTPS.
-  - Las contraseñas deben ser pasadas por una funcion de hashing antes de ser guardadas a la base de datos.
-  - La funcion de hashing sera Bcrypt.
+- usar protocolos de comunicacion seguros, tales como, HTTPS.
+- Las contraseñas deben ser pasadas por una funcion de hashing antes de ser guardadas a la base de datos.
+- La funcion de hashing sera Bcrypt.
 
-- Herramientas de desarrollo:
+Herramientas de desarrollo:
 
-  - El sistema de manejo de base de datos sera PostgreSQL.
-  - El lenguaje de programacion para la API HTTP sera Go (Golang).
-  - GoFiber sera el framework de desarrollo web para crear la API HTTP.
-  - JSON sera el formato de texto para compartir informacion.
-  - Se usara la tecnica de sesiones para manejar las sesiones de los usuarios.
+- El sistema de manejo de base de datos sera PostgreSQL.
+- El lenguaje de programacion para la API HTTP sera Go (Golang).
+- GoFiber sera el framework de desarrollo web para crear la API HTTP.
+- JSON sera el formato de texto para compartir informacion.
+- Se usara la tecnica de sesiones para manejar las sesiones de los usuarios.
 
 **Aplicaciones graficas**
 
-- Usabilidad:
+Usabilidad:
 
-  - Asegurar que las aplicaciones seas responsivas a las interacciones del usuario en el menor tiempo posible.
-  - El sistema debe de proporcionar mensajes de error entendibles.
-  - Las interfaces de usuario deben de brindar una experiencia de usuario buena.
+- Asegurar que las aplicaciones seas responsivas a las interacciones del usuario en el menor tiempo posible.
+- El sistema debe de proporcionar mensajes de error entendibles.
+- Las interfaces de usuario deben de brindar una experiencia de usuario buena.
 
-- Documentacion:
+Documentacion:
 
-  - Se deben realizar capaciones a los empleados del cine.
+- Se deben realizar capaciones a los empleados del cine.
 
-- Herramientas de desarrollo:
+Herramientas de desarrollo:
 
-  - ViteJS como herramienta de desarrollo para el proyecto.
-  - Lenguaje de programacion Typescript.
-  - ReactJS como libreria para crear la interfaz web.
-  - React Router para manejar enrutamiento del lado del cliente.
-  - StitchesJS para estilizar componentes.
-  - Radiux UI por sus componentes accesisibles.
+- ViteJS como herramienta de desarrollo para el proyecto.
+- Lenguaje de programacion Typescript.
+- ReactJS como libreria para crear la interfaz web.
+- React Router para manejar enrutamiento del lado del cliente.
+- StitchesJS para estilizar componentes.
+- Radiux UI por sus componentes accesisibles.
 
 ## Descripcion del sistema
 
@@ -343,3 +379,96 @@ El sistema de administracion del cine proveera un conjunto de herramientas para 
 - Venta de boletos.
 
 Para hacer uso de estas herramientas, el sistema ofrecera una aplicacion web.
+# Diseño del sistema de administracion de cine
+
+En la etapa de diseño del sistema tocaremos los siguientes puntos:
+
+- Modelacion de los datos del sistema.
+- Comunicacion de los componentes del sistema.
+- Diseño de las interfaces de usuario.
+
+## Modelacion de los datos del sistema.
+
+Gracias al analisis previo pudimos obtener detalles del tipo de informacion con la que trabajaremos en el sistema, ademas de ver como la informacion esta relacionada. Lo que se hara en esta seccion es extender lo que se hizo en el analisis, crearemos un diagrama de entidad-relacion.
+
+### Entidades
+
+En el analisis obtuvimos las siguientes entidades:
+
+- Pelicula.
+- Usuario.
+- Sala.
+- Asiento.
+- Horario.
+- Funcion.
+- Venta.
+- Boleto.
+
+### Diagrama entidad relacion
+
+![](./imagenes/diagrama-entidad-relacion.png)
+
+## Comunicacion de los componentes del sistema
+
+El sistema esta compuesto de:
+
+- API HTTP.
+- Bases de datos.
+- Aplicacion web.
+
+A continuacion se muestra un diagrama en donde se ve como estos componentes se comunican.
+
+![](./imagenes/diagrama-de-despliegue.jpg)
+
+## Diseño de las interfaces de usuario
+# Roles
+
+## Manager del proyecto
+
+Se encarga de tomas los requerimientos, y en base a ellos digirir a los otros miembros del equipo para realizar el sistema propuesto. Esto se lograra creando tareas nuevas, asignandolas a miembros, y monitorear que estas tareas se completen en tiempo y forma.
+
+## Analista
+
+Analisa el sistema propuesto, establece objetivos, requisitos y descripciones. La meta del analista sera la de entender lo que se desea hacer, y descubrir cuales son las mejores formas de desarrollar el sistema deseado.
+
+El analista tiene que hacerse uno con el sistema, sus funciones, el tipo de informacion del sistema, como estara compuesto el sistema, etc.
+
+## Programador
+
+Encargado de tomar las tareas asignadas por el _manager del proyecto_, y con sus conocimientos implementar las soluciones para dichas tareas.
+
+El programador tiene un arsenal de herramientas para lograrlo, su principal arma: un lenguaje de programacion.
+
+## Administrador de base de datos
+
+sera el encargado de manejar los datos del sistema, esto lo hara usando sus conocimientos de base de datos, normalizacion, SQL, optimizaciones, etc.
+
+## Diseñador UI
+
+La persona encarga de crear las diferentes interfaces de usuario graficas del sistema. Es un rol muy importante, ya que existen principios que se deben seguir para crear interfaces amigables, accesibles, y faciles de usar.
+
+## Asignacion de roles
+
+- Manager del proyecto:
+
+  - Edwin Garcia
+
+- Analista:
+
+  - Adriana
+  - Edwin Garcia
+  - Enmanuel Olivas
+  - Ivan
+  - Kenroy Norori
+
+- Desarrollador Web:
+
+  - Edwin Garcia
+
+- Administrador de base de datos:
+
+  - Edwin Garcia
+
+- Diseñador UI:
+  - Edwin Garcia
+  - Kenroy Norori

@@ -25,7 +25,7 @@ En el analisis obtuvimos las siguientes entidades:
 
 ### Diagrama entidad relacion
 
-![](../imagenes/diagrama-entidad-relacion.png)
+![](./imagenes/diagrama-entidad-relacion.png)
 
 ## Comunicacion de los componentes del sistema
 
@@ -37,6 +37,6 @@ El sistema esta compuesto de:
 
 A continuacion se muestra un diagrama en donde se ve como estos componentes se comunican.
 
-![](../imagenes/diagrama-de-despliegue.jpg)
+![](./imagenes/diagrama-de-despliegue.jpg)
 
 ## Diseño de las interfaces de usuario
